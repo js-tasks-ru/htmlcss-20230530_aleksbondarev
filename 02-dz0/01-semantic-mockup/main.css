@@ -1,0 +1,63 @@
+html, body {
+    font-size: 16px;
+    margin: 0;
+    color: #fff;
+}
+
+h1, h2, ul, ol {
+    margin: 0;
+    padding: 0;
+}
+
+header {
+    text-align: center;
+}
+
+header h1 {
+    font-size: 2.5rem;
+    background: #fa0000;
+    padding: 10px 0;
+}
+
+header nav {
+    font-size: 1.5rem;
+    background: #f1a010;
+    padding: 15px 0;
+}
+
+header nav a {
+    color: #fff;
+    margin: 0 10px 0 0;
+}
+
+main {
+    background: #179803;
+    padding: 15px;
+}
+
+main article {
+    background: #374FC7;
+    margin: 10px 0 0;
+    padding: 15px 15px 25px;
+}
+
+main article:first-child {
+    margin: 0;
+}
+
+main article h2 {
+    margin: 15px 0 0;
+}
+
+main article ol,
+main article ul {
+    margin-top: 15px;
+    padding-left: 30px;
+}
+
+footer {
+    font-size: 2rem;
+    background: #8766e0;
+    text-align: center;
+    padding: 5px 0;
+}
