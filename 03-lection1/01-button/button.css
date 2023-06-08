@@ -1,3 +1,7 @@
+.buttons {
+    padding: 20px;
+}
+
 .button {
     background: none;
     border: none;
@@ -18,16 +22,6 @@
     cursor: default;
     opacity: 0.5;
     pointer-events: none;
-}
-
-.buttons-list {
-    list-style: none;
-    margin: 0;
-    padding: 20px;
-}
-
-.buttons-list__button {
-    display: inline-block;
 }
 
 .button_primary {
