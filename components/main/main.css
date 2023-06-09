@@ -3,7 +3,7 @@
     height: 1036px;
 }
 
-.main-bordered {
+.main_bordered {
     border: 1px var(--grey-2);
     border-style: solid none;
 }
