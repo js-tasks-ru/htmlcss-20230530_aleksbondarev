@@ -4,9 +4,9 @@
 }
 
 .accordion-section {
-    margin-bottom: 8px;
     border: 1px solid var(--grey-3);
     border-radius: 8px;
+    margin-bottom: 8px;
 }
 
 .accordion-section:last-child {
@@ -14,17 +14,17 @@
 }
 
 .accordion-section__trigger {
+    color: var(--black);
+    cursor: pointer;
     font-size: 16px;
     line-height: 24px;
-    padding: 24px 32px;
     list-style: none;
-    cursor: pointer;
-    color: var(--black);
+    padding: 24px 32px;
 }
 
 .accordion-section__content {
-    line-height: 24px;
     color: var(--grey-4);
+    line-height: 24px;
     padding: 0 24px 24px;
 }
 
