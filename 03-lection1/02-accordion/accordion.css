@@ -1,19 +1,14 @@
-.accordion {
-    max-width: 1200px;
-    padding: 20px;
-}
-
-.accordion-section {
+.accordion__section {
     border: 1px solid var(--grey-3);
     border-radius: 8px;
     margin-bottom: 8px;
 }
 
-.accordion-section:last-child {
+.accordion__section:last-child {
     margin: 0;
 }
 
-.accordion-section__trigger {
+.accordion__trigger {
     color: var(--black);
     cursor: pointer;
     font-size: 16px;
@@ -22,20 +17,20 @@
     padding: 24px 32px;
 }
 
-.accordion-section[open] .accordion-section__trigger {
+.accordion__section[open] .accordion__trigger {
     padding-bottom: 16px;
 }
 
-.accordion-section__content {
+.accordion__content {
     color: var(--grey-4);
     line-height: 24px;
     padding: 0 32px 24px;
 }
 
-.accordion-section__text {
+.accordion__text {
     margin: 0 0 16px;
 }
 
-.accordion-section__text:last-child {
+.accordion__text:last-child {
     margin: 0;
 }
