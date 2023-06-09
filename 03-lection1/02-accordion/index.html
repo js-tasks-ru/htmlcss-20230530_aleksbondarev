@@ -1,18 +1,38 @@
 <!DOCTYPE html>
-<!-- Страница с аккордеоном -->
 <html lang="ru">
-    <head>
-        <link rel="stylesheet" href="../../assets/css/main.css">
-        <link rel="stylesheet" href="./accordion.css">
-    </head>
-    <body>
-        <details>
-            <summary>
-                Accordion item
-            </summary>
-            <p>
-                Hidden content
-            </p>
-        </details>
-    </body>
+<head>
+    <meta charset="UTF-8">
+    <title>Аккордеон</title>
+    <link rel="stylesheet" href="../../assets/css/main.css">
+    <link rel="stylesheet" href="./accordion.css">
+</head>
+<body>
+<div class="accordion">
+    <details class="accordion__section">
+        <summary class="accordion__trigger">
+            The Legend of Zelda: Tears of the Kingdom
+        </summary>
+        <div class="accordion__content">
+            <p class="accordion__text">The Legend of Zelda: Tears of the Kingdom (яп. ゼルダの伝説 ティアーズ オブ ザ キングダム Дзэруда но Дэнсэцу Тиасу обу дза Кингудаму (Легенда о Зельде: Слёзы Королевства)) — компьютерная игра в жанре action-adventure с открытым миром, разработанная компанией Nintendo для консоли Nintendo Switch, вышедшая 12 мая 2023 года.</p>
+            <p class="accordion__text">Разработка игры началась в 2017 году, после завершения работы над The Legend of Zelda: Breath of the Wild. Первый тизер-трейлер был показан на презентации Nintendo Direct в рамках E3 2019.</p>
+        </div>
+    </details>
+    <details class="accordion__section">
+        <summary class="accordion__trigger">
+            Atomic Heart
+        </summary>
+        <div class="accordion__content">
+            <p class="accordion__text">История альтернативной реальности 1950-х годов, берёт своё начало с развития робототехники и высоких технологий в годы Второй мировой войны. Мир игры не так далёк от тех идеалов, за которые борется человечество наших дней. Счастливое общество, верховенство науки, идеальные города с залитыми солнцем зелёными парками и скверами, автоматизация быта и стремление к звёздам. Всё это мы можем получить уже в ближайшем будущем. Но давайте посмотрим на изнанку идеального мира. Могло ли подобное уже произойти? И к чему это может привести?</p>
+        </div>
+    </details>
+    <details class="accordion__section">
+        <summary class="accordion__trigger">
+            Bloodborne
+        </summary>
+        <div class="accordion__content">
+            <p class="accordion__text">Bloodborne (яп. ブラッドボーン Бладборн, рус. Порождение крови) — видеоигра в жанре action/RPG, разработанная компанией From Software и SCE Japan Studio для консоли нового поколения PlayStation 4. Руководит проектом Хидетака Миядзаки. Первоначально анонсированная как Project Beast на E3, являет собой духовного наследника Souls-серии.</p>
+        </div>
+    </details>
+</div>
+</body>
 </html>
