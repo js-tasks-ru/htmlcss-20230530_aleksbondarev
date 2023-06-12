@@ -1,9 +1,0 @@
-.main {
-    background: var(--grey-1);
-    height: 1036px;
-}
-
-.main_bordered {
-    border: 1px var(--grey-2);
-    border-style: solid none;
-}

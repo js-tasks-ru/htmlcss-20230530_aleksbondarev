@@ -2,8 +2,9 @@
 @import "reset.local.css";
 @import '../fonts/fonts.css';
 @import "../../components/root/root.css";
+@import "../../components/container/container.css";
+@import "../../components/preview/preview.css";
 @import "../../components/header/header.css";
-@import "../../components/main/main.css";
 @import "../../components/footer/footer.css";
 
 :root {
@@ -27,4 +28,12 @@
 
 * {
     font-family: 'Roboto', sans-serif;
+}
+
+html {
+    height: 100%;
+}
+
+body {
+    height: 100vh;
 }
