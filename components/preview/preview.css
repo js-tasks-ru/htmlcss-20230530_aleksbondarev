@@ -13,22 +13,3 @@
     flex-wrap: wrap;
     gap: 30px;
 }
-
-.preview__card {
-    align-items: center;
-    background: var(--white);
-    border-radius: 12px;
-    box-shadow: 0 2px 4px rgba(33, 36, 41, 0.05);
-    display: flex;
-    height: 367px;
-    justify-content: center;
-    padding: 32px 24px;
-    width: 350px;
-}
-
-.preview__card-description {
-    align-self: flex-end;
-    font-size: 21px;
-    font-weight: 500;
-    line-height: 25px;
-}
