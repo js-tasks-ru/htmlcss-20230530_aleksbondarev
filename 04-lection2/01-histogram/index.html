@@ -1,11 +1,32 @@
 <!DOCTYPE html>
-<!-- Страница с гистограммой -->
 <html lang="ru">
-    <head>
-        <link rel="stylesheet" href="../../assets/css/main.css">
-        <link rel="stylesheet" href="./histogram.css">
-    </head>
-    <body>
+<head>
+    <meta charset="UTF-8">
+    <title>Histogram</title>
+    <link rel="stylesheet" href="../../assets/css/main.css">
+    <link rel="stylesheet" href="./histogram.css">
+</head>
+<body>
+<div class="histogram">
+    <div class="histogram__header">
+        <div class="histogram__title">Total orders</div>
+        <a href="#" class="histogram__link">View all</a>
+    </div>
+    <div class="histogram__total">50254</div>
+    <div class="histogram__bars"></div>
+</div>
+<script>
+    function createHistogram(barsEle, barsNumber = 30) {
+        let barsHTML = '';
+        for (let i = 0; i < barsNumber; i++) {
+            const barHeight = Math.floor(Math.random() * 100) + 1;
+            barsHTML += `<div class="histogram__bar" style="height: ${barHeight}%"></div>`;
+        }
 
-    </body>
+        barsEle.innerHTML = barsHTML;
+    }
+
+    createHistogram(document.querySelector('.histogram__bars'));
+</script>
+</body>
 </html>
