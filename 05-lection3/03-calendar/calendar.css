@@ -40,13 +40,29 @@
 .calendar__item {
     align-items: center;
     display: flex;
+    font-family: 'Source Sans 3', 'Inter', sans-serif;
     font-size: 16px;
     justify-content: center;
     line-height: 20px;
 }
 
+.calendar__item:not(:empty) {
+    cursor: pointer;
+}
+
 .calendar__item_day {
+    align-self: flex-start;
     color: #90A0B7;
+    font-family: 'Inter', sans-serif;
     font-size: 14px;
     line-height: 20px;
+}
+
+.calendar__item_active {
+    background: var(--primary);
+    color: var(--white);
+}
+
+.calendar__item_range {
+    background: rgba(160, 177, 245, .2);
 }
