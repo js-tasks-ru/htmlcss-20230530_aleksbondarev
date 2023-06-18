@@ -5,7 +5,7 @@
     padding: 28px 26px 32px;
 }
 
-.calendar__inner {
+.calendar__aspect-ratio-box {
     padding-bottom: 100%;
     position: relative;
     width: 100%;
