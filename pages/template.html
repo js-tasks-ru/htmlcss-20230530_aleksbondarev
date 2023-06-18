@@ -1,0 +1,77 @@
+<!DOCTYPE html>
+<html lang="ru">
+<head>
+    <meta charset="UTF-8">
+    <title>Component template page</title>
+    <link rel="stylesheet" href="../assets/css/main.css">
+    <script src="../components/histogram/histogram.js"></script>
+</head>
+<body>
+<div class="root root_component-page">
+    <header class="header header_component-page"></header>
+    <main class="main">
+        <div class="container">
+            <div class="component-page">
+                <aside class="sidebar component-page__sidebar">
+                    <div class="sidebar__section">
+                        <h4 class="sidebar__section-title">Components</h4>
+                        <nav class="sidebar__section-links">
+                            <a href="#" class="sidebar__section-link">Avatar</a>
+                            <a href="#" class="sidebar__section-link">Custom form elements</a>
+                            <a href="#" class="sidebar__section-link sidebar__section-link_active">Histogram</a>
+                            <a href="#" class="sidebar__section-link">Custom form elements</a>
+                            <a href="#" class="sidebar__section-link">Button</a>
+                        </nav>
+                    </div>
+                    <div class="sidebar__section">
+                        <h4 class="sidebar__section-title">Containers</h4>
+                        <nav class="sidebar__section-links">
+                            <a href="#" class="sidebar__section-link">Avatar</a>
+                            <a href="#" class="sidebar__section-link">Custom form elements</a>
+                            <a href="#" class="sidebar__section-link">Histogram</a>
+                            <a href="#" class="sidebar__section-link">Custom form elements</a>
+                            <a href="#" class="sidebar__section-link">Button</a>
+                        </nav>
+                    </div>
+                    <div class="sidebar__section">
+                        <h4 class="sidebar__section-title">Templates</h4>
+                        <nav class="sidebar__section-links">
+                            <a href="#" class="sidebar__section-link">Avatar</a>
+                            <a href="#" class="sidebar__section-link">Custom form elements</a>
+                            <a href="#" class="sidebar__section-link">Histogram</a>
+                            <a href="#" class="sidebar__section-link">Custom form elements</a>
+                            <a href="#" class="sidebar__section-link">Button</a>
+                        </nav>
+                    </div>
+                </aside>
+                <section class="component-page__content">
+                    <div class="component">
+                        <div class="component__title">Histogram</div>
+                        <div class="component__content">
+                            <div class="histogram histogram_sm">
+                                <div class="histogram__header">
+                                    <div class="histogram__title">Total orders</div>
+                                    <a href="#" class="histogram__link">View all</a>
+                                </div>
+                                <div class="histogram__total">50254</div>
+                                <div class="histogram__bars"></div>
+                            </div>
+                        </div>
+                    </div>
+                </section>
+            </div>
+        </div>
+    </main>
+    <footer class="footer footer_sm">
+        <div class="container">
+            <div class="footer__inner">
+                <h6 class="footer__title footer__title_sm">Reusable component library</h6>
+            </div>
+        </div>
+    </footer>
+</div>
+<script>
+    createHistogram(document.querySelector('.histogram__bars'));
+</script>
+</body>
+</html>

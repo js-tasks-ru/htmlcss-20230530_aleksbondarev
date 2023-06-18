@@ -2,11 +2,17 @@
 @import "reset.local.css";
 @import '../fonts/fonts.css';
 @import "../../components/root/root.css";
+@import "../../components/header/header.css";
+@import "../../components/main/main.css";
+@import "../../components/footer/footer.css";
+@import "../../components/sidebar/sidebar.css";
 @import "../../components/container/container.css";
 @import "../../components/card/card.css";
 @import "../../components/preview/preview.css";
-@import "../../components/header/header.css";
-@import "../../components/footer/footer.css";
+@import "../../components/component-page/component-page.css";
+@import "../../components/component/component.css";
+
+@import "../../components/histogram/histogram.css";
 
 :root {
     --white: #ffffff;
@@ -25,10 +31,8 @@
 
     --primary: var(--blue);
     --secondary: var(--purple);
-}
 
-* {
-    font-family: 'Roboto', sans-serif;
+    --bg-component-page: var(--grey-1);
 }
 
 html {
@@ -36,5 +40,6 @@ html {
 }
 
 body {
+    font-family: 'Roboto', sans-serif;
     height: 100vh;
 }

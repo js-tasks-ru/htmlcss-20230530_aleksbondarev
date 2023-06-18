@@ -1,0 +1,11 @@
+.component {
+    font-family: 'Inter', sans-serif;
+    padding: 32px 48px;
+}
+
+.component__title {
+    font-size: 28px;
+    line-height: 38px;
+    color: var(--grey-4);
+    margin-bottom: 24px;
+}
