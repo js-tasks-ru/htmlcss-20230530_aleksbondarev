@@ -13,12 +13,10 @@
 
 .calendar__body-wrapper {
     bottom: 0;
-    height: 100%;
     left: 0;
     position: absolute;
     right: 0;
     top: 0;
-    width: 100%;
 }
 
 .calendar__header {
@@ -34,7 +32,6 @@
 .calendar__body {
     display: grid;
     grid-template: repeat(7, 1fr) / repeat(7, 1fr);
-    height: 100%;
 }
 
 .calendar__item {
