@@ -1,6 +1,15 @@
 .header {
     padding: 96px 0 77px 0;
+    grid-area: header;
+    background: var(--white);
 }
+
+
+.header_component-page {
+    padding: 0;
+    height: 82px;
+}
+
 
 .header__title {
     color: var(--black);

@@ -1,5 +1,12 @@
 .root {
-    display: flex;
-    flex-direction: column;
-    height: 100%;
+    display: grid;
+    grid-template:
+            "header" auto
+            "main" 1fr
+            "footer" auto;
+    min-height: 100%;
+}
+
+.root_component-page {
+    background: var(--bg-component-page);
 }
