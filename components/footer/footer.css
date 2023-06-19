@@ -8,6 +8,15 @@
     padding: 56px 0;
 }
 
+.footer_sm .footer__title {
+    color: var(--grey-3);
+    font-size: 12px;
+    font-weight: 500;
+    letter-spacing: 0.04em;
+    line-height: 18px;
+    text-transform: uppercase;
+}
+
 .footer__inner {
     margin: 0 auto;
     max-width: 640px;
@@ -18,15 +27,6 @@
     font-size: 38px;
     font-weight: 500;
     line-height: 48px;
-}
-
-.footer__title_sm {
-    color: var(--grey-3);
-    font-size: 12px;
-    font-weight: 500;
-    letter-spacing: 0.04em;
-    line-height: 18px;
-    text-transform: uppercase;
 }
 
 .footer__about {
