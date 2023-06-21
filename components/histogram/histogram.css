@@ -17,14 +17,14 @@
 
 .histogram__title {
     color: var(--black);
-    font-size: 16px;
+    font-size: 1.6rem;
     line-height: 24px;
     opacity: 0.8;
 }
 
 .histogram__link {
     color: var(--blue);
-    font-size: 16px;
+    font-size: 1.6rem;
     line-height: 24px;
     padding-top: 3px;
     text-decoration: none;
@@ -32,7 +32,7 @@
 
 .histogram__total {
     color: var(--black);
-    font-size: 20px;
+    font-size: 2rem;
     font-weight: 500;
     line-height: 26px;
     margin-bottom: 39px;
