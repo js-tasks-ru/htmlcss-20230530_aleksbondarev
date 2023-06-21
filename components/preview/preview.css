@@ -1,4 +1,4 @@
-.preview {
+.preview__inner {
     background: var(--grey-1);
     border: 1px var(--grey-2);
     border-style: solid none;
@@ -6,6 +6,16 @@
     flex-direction: column;
     padding: 68px 0 92px;
 }
+
+.preview__title {
+    color: var(--black);
+    font-size: 5rem;
+    font-weight: 500;
+    line-height: 64px;
+    margin-bottom: 77px; /* TODO: temporary solution, before tabs will appear */
+    margin-top: 16px;
+}
+
 
 .preview__cards {
     display: flex;
