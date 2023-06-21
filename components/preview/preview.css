@@ -12,3 +12,9 @@
     flex-wrap: wrap;
     gap: 30px;
 }
+
+.preview__show-more-button {
+    display: flex;
+    justify-content: center;
+    margin-top: 64px;
+}
