@@ -10,3 +10,7 @@
 .root_component-page {
     background: var(--bg-component-page);
 }
+
+.root_component-page .header {
+    background: transparent;
+}
