@@ -1,11 +1,9 @@
 .component-page {
-    column-gap: 56px;
-    display: grid;
-    grid-template: "sidebar content" auto / 229px 1fr;
     margin-top: 36px;
 }
 
 .component-page__sidebar {
+    display: none;
     grid-area: sidebar;
 }
 
@@ -14,4 +12,17 @@
     border-radius: 12px;
     box-shadow: 0 2px 4px rgba(33, 36, 41, 0.05);
     grid-area: content;
+}
+
+
+@media (min-width: 1280px) {
+    .component-page {
+        column-gap: 56px;
+        display: grid;
+        grid-template: "sidebar content" auto / 229px 1fr;
+    }
+
+    .component-page__sidebar {
+        display: flex;
+    }
 }
