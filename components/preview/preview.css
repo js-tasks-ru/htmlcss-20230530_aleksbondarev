@@ -30,10 +30,6 @@
 
 
 @media (min-width: 768px) {
-    .preview__inner {
-        padding: 68px 0 92px;
-    }
-
     .preview__title {
         font-size: 5rem;
         font-weight: 500;
@@ -43,17 +39,21 @@
     }
 
     .preview__cards {
-        gap: 30px;
         grid-template-columns: repeat(2, 1fr);
-    }
-
-    .preview__show-more-button {
-        margin-top: 64px;
     }
 }
 
 @media (min-width: 1280px) {
+    .preview__inner {
+        padding: 68px 0 92px;
+    }
+
     .preview__cards {
+        gap: 30px;
         grid-template-columns: repeat(3, minmax(350px, auto));
+    }
+
+    .preview__show-more-button {
+        margin-top: 64px;
     }
 }
