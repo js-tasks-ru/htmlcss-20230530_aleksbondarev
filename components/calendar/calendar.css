@@ -7,8 +7,8 @@
 
 .calendar_sm {
     max-width: 200px;
-    width: 200px;
     padding: 14px 16px;
+    width: 200px;
 }
 
 .calendar_sm .calendar__header {
