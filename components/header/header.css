@@ -6,6 +6,7 @@
 
 .header__inner {
     display: flex;
+    justify-content: center;
 }
 
 .header__logo {
@@ -14,4 +15,10 @@
 
 .header__logo svg {
     color: var(--black);
+}
+
+@media (min-width: 768px) {
+    .header__inner {
+        justify-content: flex-start;
+    }
 }
