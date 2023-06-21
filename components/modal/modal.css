@@ -8,6 +8,21 @@
     top: 0;
 }
 
+.modal_window-preview {
+    display: block;
+    padding: 30px;
+    pointer-events: none;
+    position: static;
+}
+
+.modal_window-preview .modal__window {
+    left: initial;
+    padding: 24px;
+    position: relative;
+    top: initial;
+    transform: none;
+}
+
 .modal__window {
     background: var(--white);
     border-radius: 8px;
