@@ -37,7 +37,6 @@
 
 .calendar__header {
     color: #334D6E;
-    font-family: 'Inter', sans-serif;
     font-size: 2rem;
     font-weight: 600;
     line-height: 24px;
@@ -54,10 +53,13 @@
 .calendar__item {
     align-items: center;
     display: flex;
-    font-family: 'Source Sans 3', 'Inter', sans-serif;
     font-size: 1.6rem;
     justify-content: center;
     line-height: 20px;
+}
+
+.calendar__item:not(.calendar__item_day) {
+    font-family: var(--alternate-font-family);
 }
 
 .calendar__item:not(:empty) {
@@ -67,7 +69,6 @@
 .calendar__item_day {
     align-self: flex-start;
     color: #90A0B7;
-    font-family: 'Inter', sans-serif;
     font-size: 1.4rem;
     line-height: 20px;
 }

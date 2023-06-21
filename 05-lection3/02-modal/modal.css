@@ -30,7 +30,6 @@
 
 .modal__title {
     color: var(--grey-4);
-    font-family: 'Inter', sans-serif;
     font-size: 20px;
     font-weight: 600;
     line-height: 24px;
@@ -39,7 +38,6 @@
 
 .modal__text {
     color: var(--grey-4);
-    font-family: 'Inter', sans-serif;
     font-size: 16px;
     line-height: 24px;
 }

@@ -21,7 +21,6 @@
 
 .calendar__header {
     color: #334D6E;
-    font-family: 'Inter', sans-serif;
     font-size: 20px;
     font-weight: 600;
     line-height: 24px;
@@ -37,7 +36,6 @@
 .calendar__item {
     align-items: center;
     display: flex;
-    font-family: 'Source Sans 3', 'Inter', sans-serif;
     font-size: 16px;
     justify-content: center;
     line-height: 20px;
@@ -50,7 +48,7 @@
 .calendar__item_day {
     align-self: flex-start;
     color: #90A0B7;
-    font-family: 'Inter', sans-serif;
+    font-family: var(--alternate-font-family);
     font-size: 14px;
     line-height: 20px;
 }
