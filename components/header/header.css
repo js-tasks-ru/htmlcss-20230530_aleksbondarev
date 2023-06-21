@@ -1,19 +1,17 @@
 .header {
-    padding: 96px 0 77px 0;
-    grid-area: header;
     background: var(--white);
+    grid-area: header;
+    padding: 24px 0 24px 0;
 }
 
-
-.header_component-page {
-    padding: 0;
-    height: 82px;
+.header__inner {
+    display: flex;
 }
 
+.header__logo {
+    display: inline-flex;
+}
 
-.header__title {
+.header__logo svg {
     color: var(--black);
-    font-size: 5rem;
-    font-weight: 500;
-    line-height: 64px;
 }
