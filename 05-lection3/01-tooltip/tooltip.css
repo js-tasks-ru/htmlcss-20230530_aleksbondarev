@@ -9,6 +9,12 @@
     width: 22px;
 }
 
+.tooltip__trigger-icon {
+    width: 2.4rem;
+    height: 2.4rem;
+    color: var(--black);
+}
+
 .tooltip__trigger:hover + .tooltip__bubble {
     display: block;
 }

@@ -9,8 +9,14 @@
 
 .tooltip__trigger {
     cursor: pointer;
-    height: 22px;
-    width: 22px;
+    height: 2.4rem;
+    width: 2.4rem;
+}
+
+.tooltip__trigger-icon {
+    width: 2.4rem;
+    height: 2.4rem;
+    color: var(--black);
 }
 
 .tooltip__trigger:hover + .tooltip__bubble {
