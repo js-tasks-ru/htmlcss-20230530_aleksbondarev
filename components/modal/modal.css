@@ -44,6 +44,12 @@
     width: 16px;
 }
 
+.modal__close-icon {
+    color: var(--grey-4);
+    height: 1.6rem;
+    width: 1.6rem;
+}
+
 .modal__title {
     color: var(--grey-4);
     font-size: 2rem;
