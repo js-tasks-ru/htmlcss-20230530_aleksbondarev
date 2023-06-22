@@ -12,6 +12,7 @@
 @import "../../components/component-page/component-page.css";
 @import "../../components/component/component.css";
 
+@import "../../components/svg-icon/svg-icon.css";
 @import "../../components/button/button.css";
 @import "../../components/tooltip/tooltip.css";
 @import "../../components/calendar/calendar.css";
