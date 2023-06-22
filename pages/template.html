@@ -2,13 +2,28 @@
 <html lang="ru">
 <head>
     <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1">
     <title>Component template page</title>
     <link rel="stylesheet" href="../assets/css/main.css">
     <script src="../components/histogram/histogram.js"></script>
 </head>
 <body>
 <div class="root root_component-page">
-    <header class="header header_component-page"></header>
+    <header class="header">
+        <div class="container">
+            <div class="header__inner">
+                <a class="header__logo" href="../index.html">
+                    <svg height="32" viewBox="0 0 110 32" width="110" xmlns="http://www.w3.org/2000/svg">
+                        <g>
+                            <rect fill="currentColor" height="30" width="30" y="1"/>
+                            <rect fill="currentColor" height="32" rx="16" width="32" x="38"/>
+                            <path d="M78 0L110 32H78V0Z" fill="currentColor"/>
+                        </g>
+                    </svg>
+                </a>
+            </div>
+        </div>
+    </header>
     <main class="main">
         <div class="container">
             <div class="component-page">

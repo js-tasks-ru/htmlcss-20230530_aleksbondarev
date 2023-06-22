@@ -12,6 +12,11 @@
 @import "../../components/component-page/component-page.css";
 @import "../../components/component/component.css";
 
+@import "../../components/svg-icon/svg-icon.css";
+@import "../../components/button/button.css";
+@import "../../components/tooltip/tooltip.css";
+@import "../../components/calendar/calendar.css";
+@import "../../components/modal/modal.css";
 @import "../../components/histogram/histogram.css";
 
 :root {
@@ -32,14 +37,20 @@
     --primary: var(--blue);
     --secondary: var(--purple);
 
+    --default-font-family: 'Inter', Helvetica, sans-serif;
+    --secondary-font-family: 'Roboto', var(--default-font-family);
+    --alternate-font-family: 'Source Sans 3', var(--default-font-family);
+
     --bg-component-page: var(--grey-1);
 }
 
 html {
+    font-size: 62.5%;
     height: 100%;
 }
 
 body {
-    font-family: 'Inter', sans-serif;
+    font-family: var(--default-font-family);
+    font-size: 1.6rem;
     height: 100vh;
 }
