@@ -1,11 +1,41 @@
 <!DOCTYPE html>
-<!-- Страница с полем ввода -->
 <html lang="ru">
-    <head>
-        <link rel="stylesheet" href="../../assets/css/main.css">
-        <link rel="stylesheet" href="./input.css">
-    </head>
-    <body>
-
-    </body>
+<head>
+    <meta charset="UTF-8">
+    <title>Text input</title>
+    <link rel="stylesheet" href="../../assets/css/main.css">
+    <link rel="stylesheet" href="./input.css">
+</head>
+<body>
+<div class="input">
+    <label for="input-1" class="input__label">Label</label>
+    <div class="input__control">
+        <input type="text" id="input-1" placeholder="Placeholder" class="input__control-text">
+    </div>
+</div>
+<div class="input">
+    <label for="input-2" class="input__label">Focus</label>
+    <div class="input__control">
+        <input type="text" id="input-2" value="Filled Input" class="input__control-text" autofocus>
+    </div>
+</div>
+<div class="input input_success">
+    <label for="input-3" class="input__label">Success</label>
+    <div class="input__control">
+        <input type="text" id="input-3" value="Success" class="input__control-text">
+    </div>
+</div>
+<div class="input input_invalid">
+    <label for="input-4" class="input__label">Error</label>
+    <div class="input__control">
+        <input type="text" id="input-4" value="Error" class="input__control-text">
+    </div>
+</div>
+<div class="input">
+    <label for="input-5" class="input__label">Disabled</label>
+    <div class="input__control">
+        <input type="text" id="input-5" value="Disabled" class="input__control-text" disabled>
+    </div>
+</div>
+</body>
 </html>
