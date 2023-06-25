@@ -1,0 +1,51 @@
+.tabs {
+    position: relative;
+}
+
+.tabs__scroller {
+    display: flex;
+    gap: 40px;
+    overflow-x: scroll;
+}
+
+.tabs__trigger {
+    display: none;
+}
+
+.tabs__tab-item {
+    border-bottom: 5px solid transparent;
+    color: var(--black);
+    cursor: pointer;
+    font-size: 16px;
+    line-height: 24px;
+    padding-bottom: 8px;
+    white-space: nowrap;
+}
+
+.tabs__content {
+    background: var(--grey-1);
+    border: 1px var(--grey-2);
+    border-style: solid none;
+    display: none;
+    flex-direction: column;
+    padding: 22px 0 40px;
+}
+
+.tabs__trigger[value="all"]:checked ~ .tabs__content_all,
+.tabs__trigger[value="complex"]:checked ~ .tabs__content_complex,
+.tabs__trigger[value="simple"]:checked ~ .tabs__content_simple {
+    display: block;
+}
+
+.tabs__trigger[value="all"]:checked ~ .tabs__scroller [for="#all-tab"],
+.tabs__trigger[value="complex"]:checked ~ .tabs__scroller [for="#complex-tab"],
+.tabs__trigger[value="simple"]:checked ~ .tabs__scroller [for="#simple-tab"] {
+    border-color: var(--black);
+}
+
+
+@media (min-width: 1280px) {
+    .tabs__content {
+        padding: 68px 0 92px;
+    }
+}

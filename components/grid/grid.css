@@ -1,0 +1,14 @@
+/* Grid utility-classes helpers */
+
+.grid-2-columns {
+    display: grid;
+    grid-template-columns: repeat(2, auto);
+}
+
+.gap-x-40 {
+    column-gap: 4rem;
+}
+
+.gap-y-16 {
+    row-gap: 1.6rem;
+}

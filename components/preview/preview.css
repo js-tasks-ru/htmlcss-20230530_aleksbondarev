@@ -1,17 +1,8 @@
-.preview__inner {
-    background: var(--grey-1);
-    border: 1px var(--grey-2);
-    border-style: solid none;
-    display: flex;
-    flex-direction: column;
-    padding: 22px 0 40px;
-}
-
 .preview__title {
     color: var(--black);
     font-size: 2.8rem;
     line-height: 38px;
-    margin-bottom: 69px; /* TODO: temporary solution, before tabs will appear */
+    margin-bottom: 32px;
     margin-top: 24px;
 }
 
@@ -34,7 +25,7 @@
         font-size: 5rem;
         font-weight: 500;
         line-height: 64px;
-        margin-bottom: 77px; /* TODO: temporary solution, before tabs will appear */
+        margin-bottom: 40px;
         margin-top: 16px;
     }
 
@@ -44,10 +35,6 @@
 }
 
 @media (min-width: 1280px) {
-    .preview__inner {
-        padding: 68px 0 92px;
-    }
-
     .preview__cards {
         gap: 30px;
         grid-template-columns: repeat(3, minmax(350px, auto));
