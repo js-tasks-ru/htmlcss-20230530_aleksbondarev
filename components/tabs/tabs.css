@@ -32,27 +32,27 @@
     padding: 22px 0 40px;
 }
 
-.tabs__trigger[value="all"]:focus ~ .tabs__scroller [for="#all-tab"] {
+.tabs__trigger-all:focus ~ .tabs__scroller .tabs__tab-item-all {
     text-decoration: underline;
 }
 
-.tabs__trigger[value="complex"]:focus ~ .tabs__scroller [for="#complex-tab"] {
+.tabs__trigger-complex:focus ~ .tabs__scroller .tabs__tab-item-complex {
     text-decoration: underline;
 }
 
-.tabs__trigger[value="simple"]:focus ~ .tabs__scroller [for="#simple-tab"] {
+.tabs__trigger-simple:focus ~ .tabs__scroller .tabs__tab-item-simple {
     text-decoration: underline;
 }
 
-.tabs__trigger[value="all"]:checked ~ .tabs__content_all,
-.tabs__trigger[value="complex"]:checked ~ .tabs__content_complex,
-.tabs__trigger[value="simple"]:checked ~ .tabs__content_simple {
+.tabs__trigger-all:checked ~ .tabs__content_all,
+.tabs__trigger-complex:checked ~ .tabs__content_complex,
+.tabs__trigger-simple:checked ~ .tabs__content_simple {
     display: block;
 }
 
-.tabs__trigger[value="all"]:checked ~ .tabs__scroller [for="#all-tab"],
-.tabs__trigger[value="complex"]:checked ~ .tabs__scroller [for="#complex-tab"],
-.tabs__trigger[value="simple"]:checked ~ .tabs__scroller [for="#simple-tab"] {
+.tabs__trigger-all:checked ~ .tabs__scroller .tabs__tab-item-all,
+.tabs__trigger-complex:checked ~ .tabs__scroller .tabs__tab-item-complex,
+.tabs__trigger-simple:checked ~ .tabs__scroller .tabs__tab-item-simple {
     border-color: var(--black);
 }
 
