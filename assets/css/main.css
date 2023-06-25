@@ -1,5 +1,6 @@
 @import "normalize.css";
 @import "reset.local.css";
+@import "utilities.css";
 @import '../fonts/fonts.css';
 
 @import "../../components/root/root.css";
@@ -23,8 +24,6 @@
 @import "../../components/avatar/avatar.css";
 @import "../../components/checkbox/checkbox.css";
 @import "../../components/radio/radio.css";
-
-@import "../../components/grid/grid.css";
 
 :root {
     --white: #ffffff;
