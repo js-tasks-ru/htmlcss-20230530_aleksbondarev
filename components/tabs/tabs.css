@@ -9,7 +9,8 @@
 }
 
 .tabs__trigger {
-    display: none;
+    clip: rect(0, 0, 0, 0);
+    position: absolute;
 }
 
 .tabs__tab-item {
@@ -29,6 +30,18 @@
     display: none;
     flex-direction: column;
     padding: 22px 0 40px;
+}
+
+.tabs__trigger[value="all"]:focus ~ .tabs__scroller [for="#all-tab"] {
+    text-decoration: underline;
+}
+
+.tabs__trigger[value="complex"]:focus ~ .tabs__scroller [for="#complex-tab"] {
+    text-decoration: underline;
+}
+
+.tabs__trigger[value="simple"]:focus ~ .tabs__scroller [for="#simple-tab"] {
+    text-decoration: underline;
 }
 
 .tabs__trigger[value="all"]:checked ~ .tabs__content_all,
