@@ -1,0 +1,64 @@
+.tabs {
+    position: relative;
+}
+
+.tabs__scroller {
+    display: flex;
+    gap: 40px;
+    overflow-x: scroll;
+}
+
+.tabs__trigger {
+    clip: rect(0, 0, 0, 0);
+    position: absolute;
+}
+
+.tabs__tab-item {
+    border-bottom: 5px solid transparent;
+    color: var(--black);
+    cursor: pointer;
+    font-size: 16px;
+    line-height: 24px;
+    padding-bottom: 8px;
+    white-space: nowrap;
+}
+
+.tabs__content {
+    background: var(--grey-1);
+    border: 1px var(--grey-2);
+    border-style: solid none;
+    display: none;
+    flex-direction: column;
+    padding: 22px 0 40px;
+}
+
+.tabs__trigger-all:focus ~ .tabs__scroller .tabs__tab-item-all {
+    text-decoration: underline;
+}
+
+.tabs__trigger-complex:focus ~ .tabs__scroller .tabs__tab-item-complex {
+    text-decoration: underline;
+}
+
+.tabs__trigger-simple:focus ~ .tabs__scroller .tabs__tab-item-simple {
+    text-decoration: underline;
+}
+
+.tabs__trigger-all:checked ~ .tabs__content_all,
+.tabs__trigger-complex:checked ~ .tabs__content_complex,
+.tabs__trigger-simple:checked ~ .tabs__content_simple {
+    display: block;
+}
+
+.tabs__trigger-all:checked ~ .tabs__scroller .tabs__tab-item-all,
+.tabs__trigger-complex:checked ~ .tabs__scroller .tabs__tab-item-complex,
+.tabs__trigger-simple:checked ~ .tabs__scroller .tabs__tab-item-simple {
+    border-color: var(--black);
+}
+
+
+@media (min-width: 1280px) {
+    .tabs__content {
+        padding: 68px 0 92px;
+    }
+}
