@@ -4,9 +4,14 @@
     padding: 24px 0 24px 0;
 }
 
+.header_grey-bg {
+    background: var(--grey-1);
+}
+
 .header__inner {
     display: flex;
     justify-content: center;
+    position: relative;
 }
 
 .header__logo {
