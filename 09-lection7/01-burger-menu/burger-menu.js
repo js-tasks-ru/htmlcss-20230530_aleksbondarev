@@ -1,6 +1,6 @@
-const menu = document.getElementById('burger-menu');
-const menuClose = document.getElementById('burger-menu-close');
-const menuOpen = document.getElementById('burger-menu-open');
+const menu = document.getElementById('mobile-menu');
+const menuClose = document.getElementById('mobile-menu-close');
+const menuOpen = document.getElementById('mobile-menu-open');
 
 if (menuOpen) {
     menuOpen.addEventListener('click', function() {
