@@ -1,24 +1,3 @@
-.header__mobile-menu-trigger {
-    cursor: pointer;
-    display: inline-flex;
-    left: 0;
-    position: absolute;
-    top: 50%;
-    transform: translateY(-50%);
-}
-
-.header__mobile-menu-trigger_close {
-    background: var(--grey-2);
-    border-radius: 50%;
-    padding: 4px;
-}
-
-.header__mobile-menu-icon {
-    color: var(--grey-4);
-    height: 24px;
-    width: 24px;
-}
-
 .mobile-menu {
     background: var(--white);
     height: 100vh;
@@ -57,9 +36,6 @@
     display: flex;
     flex-direction: column;
     gap: 24px;
-}
-
-.mobile-menu__content {
     margin-top: 24px;
 }
 
@@ -101,10 +77,6 @@
 }
 
 @media (min-width: 768px) {
-    .header__mobile-menu-trigger {
-        display: none;
-    }
-
     .mobile-menu {
         display: none;
     }
