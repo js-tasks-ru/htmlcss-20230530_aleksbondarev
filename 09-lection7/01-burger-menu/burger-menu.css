@@ -20,18 +20,6 @@
     margin-bottom: 24px;
 }
 
-.mobile-menu__theme-toggler {
-    border: 1px solid var(--grey-2);
-    border-left: none;
-    border-right: none;
-    display: block;
-    padding: 24px 0;
-}
-
-.mobile-menu__theme-toggler .toggler__state {
-    justify-content: space-between;
-}
-
 .mobile-menu__content {
     display: flex;
     flex-direction: column;

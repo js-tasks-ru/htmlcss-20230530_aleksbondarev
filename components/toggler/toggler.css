@@ -3,6 +3,14 @@
     position: relative;
 }
 
+.toggler_theme-toggler {
+    display: block;
+}
+
+.toggler_theme-toggler .toggler__state {
+    justify-content: space-between;
+}
+
 .toggler__input {
     clip: rect(0, 0, 0, 0);
     position: absolute;
