@@ -14,12 +14,6 @@
     transform: translateX(0);
 }
 
-.mobile-menu__divider {
-    background: var(--grey-2);
-    height: 1px;
-    margin-bottom: 24px;
-}
-
 .mobile-menu__content {
     display: flex;
     flex-direction: column;
