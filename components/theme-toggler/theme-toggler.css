@@ -1,0 +1,6 @@
+.theme-toggler {
+    border: 1px solid var(--grey-2);
+    border-left: none;
+    border-right: none;
+    padding: 24px 0;
+}
