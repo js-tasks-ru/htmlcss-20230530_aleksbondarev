@@ -24,6 +24,8 @@
 @import "../../components/avatar/avatar.css";
 @import "../../components/checkbox/checkbox.css";
 @import "../../components/radio/radio.css";
+@import "../../components/toggler/toggler.css";
+@import "../../components/theme-toggler/theme-toggler.css";
 
 :root {
     --white: #ffffff;

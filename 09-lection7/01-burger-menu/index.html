@@ -1,12 +1,89 @@
 <!DOCTYPE html>
-<!-- Страница бургер-меню -->
 <html lang="ru">
-    <head>
-        <link rel="stylesheet" href="../../assets/css/main.css">
-        <link rel="stylesheet" href="./burger-menu.css">
-        <script defer src="./burger-menu.js"></script>
-    </head>
-    <body>
-
-    </body>
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1">
+    <title>Burger Menu</title>
+    <link rel="stylesheet" href="../../assets/css/main.css">
+    <link rel="stylesheet" href="./burger-menu.css">
+    <script defer src="./burger-menu.js"></script>
+</head>
+<body>
+<header class="header">
+    <div class="container">
+        <div class="header__inner">
+            <a class="header__mobile-menu-trigger" id="mobile-menu-open">
+                <svg class="svg-icon header__mobile-menu-icon">
+                    <use href="../../assets/images/icons.svg#mobile-menu-trigger"></use>
+                </svg>
+            </a>
+            <div class="mobile-menu" id="mobile-menu">
+                <div class="header">
+                    <div class="container">
+                        <div class="header__inner">
+                            <a class="header__mobile-menu-trigger header__mobile-menu-trigger_close"
+                               id="mobile-menu-close">
+                                <svg class="svg-icon header__mobile-menu-icon">
+                                    <use href="../../assets/images/icons.svg#mobile-menu-close"></use>
+                                </svg>
+                            </a>
+                            <div class="header__logo">
+                                <svg height="32" viewBox="0 0 110 32" width="110" xmlns="http://www.w3.org/2000/svg">
+                                    <g>
+                                        <rect fill="currentColor" height="30" width="30" y="1"/>
+                                        <rect fill="currentColor" height="32" rx="16" width="32" x="38"/>
+                                        <path d="M78 0L110 32H78V0Z" fill="currentColor"/>
+                                    </g>
+                                </svg>
+                            </div>
+                        </div>
+                    </div>
+                </div>
+                <div class="mobile-menu__body container">
+                    <div class="theme-toggler">
+                        <label class="toggler toggler_theme-toggler">
+                            <input type="checkbox" class="toggler__input">
+                            <span class="toggler__state">
+                                <span class="toggler__label">Dark mode</span>
+                                <span class="toggler__control"></span>
+                            </span>
+                        </label>
+                    </div>
+                    <div class="mobile-menu__content">
+                        <section class="mobile-menu__section">
+                            <h4 class="mobile-menu__section-title">Elements</h4>
+                            <nav class="mobile-menu__section-links">
+                                <a href="#" class="mobile-menu__section-link">Avatar</a>
+                                <a href="#" class="mobile-menu__section-link">Custom form elements</a>
+                                <a href="#" class="mobile-menu__section-link mobile-menu__section-link_active">Histogram</a>
+                                <a href="#" class="mobile-menu__section-link">Custom form elements</a>
+                                <a href="#" class="mobile-menu__section-link">Button</a>
+                            </nav>
+                        </section>
+                        <section class="mobile-menu__section">
+                            <h4 class="mobile-menu__section-title">Containers</h4>
+                            <nav class="mobile-menu__section-links">
+                                <a href="#" class="mobile-menu__section-link">Avatar</a>
+                                <a href="#" class="mobile-menu__section-link">Custom form elements</a>
+                                <a href="#" class="mobile-menu__section-link">Histogram</a>
+                                <a href="#" class="mobile-menu__section-link">Custom form elements</a>
+                                <a href="#" class="mobile-menu__section-link">Button</a>
+                            </nav>
+                        </section>
+                    </div>
+                </div>
+            </div>
+            <div class="header__logo">
+                <svg height="32" viewBox="0 0 110 32" width="110" xmlns="http://www.w3.org/2000/svg">
+                    <g>
+                        <rect fill="currentColor" height="30" width="30" y="1"/>
+                        <rect fill="currentColor" height="32" rx="16" width="32" x="38"/>
+                        <path d="M78 0L110 32H78V0Z" fill="currentColor"/>
+                    </g>
+                </svg>
+            </div>
+        </div>
+    </div>
+</header>
+</body>
 </html>
