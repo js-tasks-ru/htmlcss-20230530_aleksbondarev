@@ -2,11 +2,11 @@
     display: inline-block;
     position: relative;
 
-    &_theme-toggler {
+    &_theme-changer {
         display: block;
     }
 
-    &_theme-toggler &__state {
+    &_theme-changer &__state {
         justify-content: space-between;
     }
 

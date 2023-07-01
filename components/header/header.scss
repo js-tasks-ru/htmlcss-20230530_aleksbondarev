@@ -7,20 +7,43 @@
         display: flex;
         justify-content: center;
         position: relative;
+        align-items: center;
 
         @media (min-width: 768px) {
-            justify-content: flex-start;
+            justify-content: space-between;
         }
     }
 
     &__logo {
         display: inline-flex;
-    }
 
-    &__logo {
         svg {
             color: var(--black);
         }
+    }
+
+    &__content {
+        display: none;
+        align-items: center;
+        gap: 56px;
+
+        @media (min-width: 768px) {
+            display: flex;
+        }
+    }
+
+    &__content-menu {
+        display: flex;
+        gap: 24px;
+        color: var(--grey-3);
+    }
+
+    &__content-menu-item_active {
+        color: var(--black);
+    }
+
+    &__content-theme-changer {
+
     }
 
     &__mobile-menu-trigger {
