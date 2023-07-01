@@ -21,8 +21,7 @@
 
                 &:before {
                     background: var(--white);
-                    left: initial;
-                    right: 1px;
+                    left: 25px;
                 }
             }
         }
@@ -77,6 +76,7 @@
             position: absolute;
             top: 1px;
             width: 24px;
+            transition: left .5s ease;
         }
     }
 
