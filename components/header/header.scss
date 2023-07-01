@@ -3,10 +3,6 @@
     grid-area: header;
     padding: 24px 0 24px 0;
 
-    &_grey-bg {
-        background: var(--grey-1);
-    }
-
     &__inner {
         display: flex;
         justify-content: center;
