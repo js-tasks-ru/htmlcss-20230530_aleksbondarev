@@ -4,10 +4,10 @@
 
   &_theme-toggler {
     display: block;
+  }
 
-    &__state {
-      justify-content: space-between;
-    }
+  &_theme-toggler &__state {
+    justify-content: space-between;
   }
 
   &__input {
