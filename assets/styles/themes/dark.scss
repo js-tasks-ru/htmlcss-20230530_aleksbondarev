@@ -1,13 +1,13 @@
 html[data-theme-dark] {
-  --bg-main: var(--black);
-  --font-color: #ffffff75;
-  --logo-color: #fff;
-  --bg-grey: var(--grey-4);
-  --bg-card: var(--black);
-  --active-text-color: var(--white);
-  --bg-component-page: var(--bg-grey);
+    --bg-main: var(--black);
+    --font-color: #ffffff75;
+    --logo-color: #fff;
+    --bg-grey: var(--grey-4);
+    --bg-card: var(--black);
+    --active-text-color: var(--white);
+    --bg-component-page: var(--bg-grey);
 
-  img {
-    filter: brightness(.8) contrast(1.2);
-  }
+    img {
+        filter: brightness(.8) contrast(1.2);
+    }
 }

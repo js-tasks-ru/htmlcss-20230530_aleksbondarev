@@ -10,7 +10,7 @@
             & + .checkbox__state .checkbox__control {
                 background: var(--primary);
                 border-color: var(--primary);
-                animation: pulse 0.5s;
+                animation: pulse .5s;
             }
 
             & + .checkbox__state .checkbox__icon {
