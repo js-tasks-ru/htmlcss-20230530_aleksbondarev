@@ -1,64 +1,61 @@
 .tabs {
     position: relative;
-}
 
-.tabs__scroller {
-    display: flex;
-    gap: 40px;
-    overflow-x: scroll;
-}
+    &__scroller {
+        display: flex;
+        gap: 40px;
+        overflow-x: scroll;
+    }
 
-.tabs__trigger {
-    clip: rect(0, 0, 0, 0);
-    position: absolute;
-}
+    &__trigger {
+        clip: rect(0, 0, 0, 0);
+        position: absolute;
+    }
 
-.tabs__tab-item {
-    border-bottom: 5px solid transparent;
-    color: var(--black);
-    cursor: pointer;
-    font-size: 16px;
-    line-height: 24px;
-    padding-bottom: 8px;
-    white-space: nowrap;
-}
+    &__tab-item {
+        border-bottom: 5px solid transparent;
+        color: var(--black);
+        cursor: pointer;
+        font-size: 16px;
+        line-height: 24px;
+        padding-bottom: 8px;
+        white-space: nowrap;
+    }
 
-.tabs__content {
-    background: var(--grey-1);
-    border: 1px var(--grey-2);
-    border-style: solid none;
-    display: none;
-    flex-direction: column;
-    padding: 22px 0 40px;
-}
+    &__content {
+        background: var(--grey-1);
+        border: 1px var(--grey-2);
+        border-style: solid none;
+        display: none;
+        flex-direction: column;
+        padding: 22px 0 40px;
 
-.tabs__trigger-all:focus ~ .tabs__scroller .tabs__tab-item-all {
-    text-decoration: underline;
-}
+        @media (min-width: 1280px) {
+            padding: 68px 0 92px;
+        }
+    }
 
-.tabs__trigger-complex:focus ~ .tabs__scroller .tabs__tab-item-complex {
-    text-decoration: underline;
-}
+    &__trigger-all:focus ~ &__scroller &__tab-item-all {
+        text-decoration: underline;
+    }
 
-.tabs__trigger-simple:focus ~ .tabs__scroller .tabs__tab-item-simple {
-    text-decoration: underline;
-}
+    &__trigger-complex:focus ~ &__scroller &__tab-item-complex {
+        text-decoration: underline;
+    }
 
-.tabs__trigger-all:checked ~ .tabs__content_all,
-.tabs__trigger-complex:checked ~ .tabs__content_complex,
-.tabs__trigger-simple:checked ~ .tabs__content_simple {
-    display: block;
-}
+    &__trigger-simple:focus ~ &__scroller &__tab-item-simple {
+        text-decoration: underline;
+    }
 
-.tabs__trigger-all:checked ~ .tabs__scroller .tabs__tab-item-all,
-.tabs__trigger-complex:checked ~ .tabs__scroller .tabs__tab-item-complex,
-.tabs__trigger-simple:checked ~ .tabs__scroller .tabs__tab-item-simple {
-    border-color: var(--black);
-}
+    &__trigger-all:checked ~ &__content_all,
+    &__trigger-complex:checked ~ &__content_complex,
+    &__trigger-simple:checked ~ &__content_simple {
+        display: block;
+    }
 
-
-@media (min-width: 1280px) {
-    .tabs__content {
-        padding: 68px 0 92px;
+    &__trigger-all:checked ~ &__scroller &__tab-item-all,
+    &__trigger-complex:checked ~ &__scroller &__tab-item-complex,
+    &__trigger-simple:checked ~ &__scroller &__tab-item-simple {
+        border-color: var(--black);
     }
 }

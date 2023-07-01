@@ -3,65 +3,63 @@
     border-radius: 8px;
     padding: 16px 16px 24px;
     width: 100%;
-}
 
-.histogram_sm {
-    max-width: 300px;
-}
-
-.histogram__header {
-    display: flex;
-    justify-content: space-between;
-    margin-bottom: 6px;
-}
-
-.histogram__title {
-    color: var(--black);
-    font-size: 1.6rem;
-    line-height: 24px;
-    opacity: .8;
-}
-
-.histogram__link {
-    color: var(--blue);
-    font-size: 1.6rem;
-    line-height: 24px;
-    padding-top: 3px;
-    text-decoration: none;
-}
-
-.histogram__total {
-    color: var(--black);
-    font-size: 2rem;
-    font-weight: 500;
-    line-height: 26px;
-    margin-bottom: 39px;
-}
-
-.histogram__bars {
-    align-items: flex-end;
-    display: flex;
-    gap: 1px;
-    height: 50px;
-}
-
-.histogram__bar {
-    background: var(--blue);
-    flex-grow: 1;
-}
-
-@media (min-width: 768px) {
-    .histogram {
+    @media (min-width: 768px) {
         border: 1px solid var(--grey-3);
         border-radius: 8px;
         padding: 16px 24px 24px;
     }
 
-    .histogram__title {
-        font-size: 1.6rem;
+    &_sm {
+        max-width: 300px;
     }
 
-    .histogram__link {
-        display: block;
+    &__header {
+        display: flex;
+        justify-content: space-between;
+        margin-bottom: 6px;
+    }
+
+    &__title {
+        color: var(--black);
+        font-size: 1.6rem;
+        line-height: 24px;
+        opacity: .8;
+
+        @media (min-width: 768px) {
+            font-size: 1.6rem;
+        }
+    }
+
+    &__link {
+        color: var(--blue);
+        font-size: 1.6rem;
+        line-height: 24px;
+        padding-top: 3px;
+        text-decoration: none;
+
+        @media (min-width: 768px) {
+            display: block;
+        }
+    }
+
+    &__total {
+        color: var(--black);
+        font-size: 2rem;
+        font-weight: 500;
+        line-height: 26px;
+        margin-bottom: 39px;
+    }
+
+    &__bars {
+        align-items: flex-end;
+        display: flex;
+        gap: 1px;
+        height: 50px;
+    }
+
+    &__bar {
+        background: var(--blue);
+        flex-grow: 1;
     }
 }

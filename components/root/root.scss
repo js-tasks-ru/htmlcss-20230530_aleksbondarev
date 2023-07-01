@@ -5,12 +5,12 @@
         'footer' auto
         / 100%;
     min-height: 100%;
-}
 
-.root_component-page {
-    background: var(--bg-component-page);
-}
+    &_component-page {
+        background: var(--bg-component-page);
 
-.root_component-page .header {
-    background: transparent;
+        .header {
+            background: transparent;
+        }
+    }
 }

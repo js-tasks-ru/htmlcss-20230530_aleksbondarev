@@ -3,10 +3,8 @@
     max-width: 1110px;
     padding: 0 16px;
     width: 100%;
-}
 
-@media (min-width: 1280px) {
-    .container {
+    @media (min-width: 1280px) {
         padding: 0;
     }
 }
