@@ -33,6 +33,30 @@
         @media (min-width: 1280px) {
             padding: 68px 0 92px;
         }
+
+        &_code {
+            margin-top: 16px;
+            background: transparent;
+            border: none;
+            padding: 0;
+
+            @media (min-width: 768px) {
+                margin-top: 24px;
+            }
+
+            pre {
+                overflow-x: auto;
+            }
+        }
+    }
+
+    &__divider {
+        position: absolute;
+        width: 100vw;
+        height: 1px;
+        background: var(--grey-2);
+        transform: translate(-50%, 0);
+        left: 50%;
     }
 
     &__trigger-all:focus ~ &__scroller &__tab-item-all {
@@ -47,15 +71,27 @@
         text-decoration: underline;
     }
 
+    &__trigger-html:focus ~ &__scroller &__tab-item-html {
+        text-decoration: underline;
+    }
+
+    &__trigger-css:focus ~ &__scroller &__tab-item-css {
+        text-decoration: underline;
+    }
+
     &__trigger-all:checked ~ &__content_all,
     &__trigger-complex:checked ~ &__content_complex,
-    &__trigger-simple:checked ~ &__content_simple {
+    &__trigger-simple:checked ~ &__content_simple,
+    &__trigger-html:checked ~ &__content_html,
+    &__trigger-css:checked ~ &__content_css {
         display: block;
     }
 
     &__trigger-all:checked ~ &__scroller &__tab-item-all,
     &__trigger-complex:checked ~ &__scroller &__tab-item-complex,
-    &__trigger-simple:checked ~ &__scroller &__tab-item-simple {
+    &__trigger-simple:checked ~ &__scroller &__tab-item-simple,
+    &__trigger-html:checked ~ &__scroller &__tab-item-html,
+    &__trigger-css:checked ~ &__scroller &__tab-item-css {
         border-color: var(--black);
     }
 }

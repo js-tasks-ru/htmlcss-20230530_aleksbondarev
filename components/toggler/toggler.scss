@@ -1,88 +1,88 @@
 .toggler {
-  display: inline-block;
-  position: relative;
-
-  &_theme-toggler {
-    display: block;
-  }
-
-  &_theme-toggler &__state {
-    justify-content: space-between;
-  }
-
-  &__input {
-    clip: rect(0, 0, 0, 0);
-    position: absolute;
-
-    &:checked {
-      & + .toggler__state .toggler__control {
-        background: var(--primary);
-        border-color: var(--primary);
-
-        &:before {
-          background: var(--white);
-          left: initial;
-          right: 1px;
-        }
-      }
-    }
-
-    &:focus {
-      & + .toggler__state .toggler__label {
-        text-decoration: underline;
-      }
-    }
-
-    &:disabled {
-      & + .toggler__state {
-        cursor: default;
-      }
-
-      & + .toggler__state .toggler__control {
-        background: var(--grey-2);
-        border-color: var(--grey-2);
-
-        &:before {
-          background: var(--grey-3);
-        }
-      }
-
-      & + .toggler__state .toggler__label {
-        color: var(--grey-2);
-      }
-    }
-  }
-
-  &__state {
-    align-items: center;
-    cursor: pointer;
-    display: flex;
-    gap: 12px;
-  }
-
-  &__control {
-    background: var(--white);
-    border: 1px solid var(--grey-2);
-    border-radius: 16px;
-    height: 28px;
+    display: inline-block;
     position: relative;
-    width: 52px;
 
-    &:before {
-      background: var(--grey-2);
-      border-radius: 50%;
-      content: '';
-      height: 24px;
-      left: 1px;
-      position: absolute;
-      top: 1px;
-      width: 24px;
+    &_theme-toggler {
+        display: block;
     }
-  }
 
-  &__label {
-    color: var(--grey-4);
-    font-size: 1.6rem;
-    line-height: 24px;
-  }
+    &_theme-toggler &__state {
+        justify-content: space-between;
+    }
+
+    &__input {
+        clip: rect(0, 0, 0, 0);
+        position: absolute;
+
+        &:checked {
+            & + .toggler__state .toggler__control {
+                background: var(--primary);
+                border-color: var(--primary);
+
+                &:before {
+                    background: var(--white);
+                    left: initial;
+                    right: 1px;
+                }
+            }
+        }
+
+        &:focus {
+            & + .toggler__state .toggler__label {
+                text-decoration: underline;
+            }
+        }
+
+        &:disabled {
+            & + .toggler__state {
+                cursor: default;
+            }
+
+            & + .toggler__state .toggler__control {
+                background: var(--grey-2);
+                border-color: var(--grey-2);
+
+                &:before {
+                    background: var(--grey-3);
+                }
+            }
+
+            & + .toggler__state .toggler__label {
+                color: var(--grey-2);
+            }
+        }
+    }
+
+    &__state {
+        align-items: center;
+        cursor: pointer;
+        display: flex;
+        gap: 12px;
+    }
+
+    &__control {
+        background: var(--white);
+        border: 1px solid var(--grey-2);
+        border-radius: 16px;
+        height: 28px;
+        position: relative;
+        width: 52px;
+
+        &:before {
+            background: var(--grey-2);
+            border-radius: 50%;
+            content: '';
+            height: 24px;
+            left: 1px;
+            position: absolute;
+            top: 1px;
+            width: 24px;
+        }
+    }
+
+    &__label {
+        color: var(--grey-4);
+        font-size: 1.6rem;
+        line-height: 24px;
+    }
 }
