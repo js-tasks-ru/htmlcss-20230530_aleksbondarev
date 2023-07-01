@@ -11,11 +11,15 @@
     min-width: 189px;
     padding: 0 15px;
     text-align: center;
-    transition: opacity 200ms ease-in-out, background 200ms ease-in-out, border-color 200ms ease-in-out;
+    transition: transform 100ms ease-in-out;
 
     &:disabled {
         opacity: .5;
         pointer-events: none;
+    }
+
+    &:active {
+        transform: translateY(2px);
     }
 
     &_primary {
