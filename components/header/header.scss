@@ -1,5 +1,5 @@
 .header {
-    background: var(--white);
+    background: var(--bg-main);
     grid-area: header;
     padding: 24px 0 24px 0;
 
@@ -18,7 +18,7 @@
         display: inline-flex;
 
         svg {
-            color: var(--black);
+            color: var(--logo-color);
         }
     }
 
@@ -39,11 +39,7 @@
     }
 
     &__content-menu-item_active {
-        color: var(--black);
-    }
-
-    &__content-theme-changer {
-
+        color: var(--active-text-color);
     }
 
     &__mobile-menu-trigger {
@@ -60,13 +56,13 @@
     }
 
     &__mobile-menu-trigger_close {
-        background: var(--grey-2);
+        background: var(--bg-grey);
         border-radius: 50%;
         padding: 4px;
     }
 
     &__mobile-menu-icon {
-        color: var(--grey-4);
+        color: var(--font-color);
         height: 24px;
         width: 24px;
     }

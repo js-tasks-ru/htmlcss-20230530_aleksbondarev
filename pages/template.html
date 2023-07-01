@@ -6,6 +6,7 @@
   <title>Component template page</title>
   <link href="../dist/bundle.css" rel="stylesheet">
   <script defer src="../components/mobile-menu/mobile-menu.js"></script>
+  <script defer src="../components/theme-changer/theme-changer.js"></script>
   <script defer src="../assets/js/external/rainbow.js"></script>
   <script src="../components/histogram/histogram.js"></script>
 </head>
@@ -84,6 +85,29 @@
             </g>
           </svg>
         </a>
+        <div class="header__content">
+          <nav class="header__content-menu">
+            <a href="#" class="header__content-menu-item header__content-menu-item_active">Components</a>
+            <a href="#" class="header__content-menu-item">About</a>
+            <a href="#" class="header__content-menu-item">Contact</a>
+          </nav>
+          <div class="header__content-theme-changer">
+            <div class="theme-changer">
+              <label class="toggler toggler_theme-changer">
+                <input type="checkbox" class="toggler__input">
+                <svg class="svg-icon theme-changer__icon">
+                  <use href="../../assets/images/icons.svg#sun"></use>
+                </svg>
+                <span class="toggler__state">
+                    <span class="toggler__control"></span>
+                </span>
+                <svg class="svg-icon theme-changer__icon">
+                  <use href="../../assets/images/icons.svg#moon"></use>
+                </svg>
+              </label>
+            </div>
+          </div>
+        </div>
       </div>
     </div>
   </header>

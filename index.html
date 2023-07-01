@@ -6,6 +6,7 @@
   <title>Reusable component library</title>
   <link href="dist/bundle.css" rel="stylesheet">
   <script defer src="components/mobile-menu/mobile-menu.js"></script>
+  <script defer src="components/theme-changer/theme-changer.js"></script>
   <script src="components/histogram/histogram.js"></script>
 </head>
 <body>
@@ -41,7 +42,7 @@
             </div>
           </div>
           <div class="mobile-menu__body container">
-            <div class="theme-changer">
+            <div class="theme-changer theme-changer_mobile">
               <label class="toggler toggler_theme-changer">
                 <input type="checkbox" class="toggler__input">
                 <span class="toggler__state">
@@ -93,14 +94,14 @@
             <div class="theme-changer">
               <label class="toggler toggler_theme-changer">
                 <input type="checkbox" class="toggler__input">
-                <svg xmlns="http://www.w3.org/2000/svg" xmlns:xlink="http://www.w3.org/1999/xlink" viewBox="0 0 24 24" class="svg-icon" fill="currentColor" id="light-theme-icon">
-                  <use xlink:href="#sun"></use>
+                <svg class="svg-icon theme-changer__icon">
+                  <use href="../../assets/images/icons.svg#sun"></use>
                 </svg>
                 <span class="toggler__state">
                     <span class="toggler__control"></span>
                 </span>
-                <svg xmlns="http://www.w3.org/2000/svg" xmlns:xlink="http://www.w3.org/1999/xlink" viewBox="0 0 24 24" class="svg-icon" fill="currentColor" id="dark-theme-icon">
-                  <use xlink:href="#moon"></use>
+                <svg class="svg-icon theme-changer__icon">
+                  <use href="../../assets/images/icons.svg#moon"></use>
                 </svg>
               </label>
             </div>

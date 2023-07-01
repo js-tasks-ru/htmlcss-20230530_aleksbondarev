@@ -3,6 +3,7 @@
     border: none;
     border-radius: 8px;
     cursor: pointer;
+    color: var(--font-color);
     font-family: var(--secondary-font-family);
     font-size: 1.6rem;
     font-weight: 500;
@@ -44,7 +45,7 @@
         border: 1px solid var(--grey-3);
 
         &:hover {
-            border-color: var(--black);
+            border-color: var(--font-color);
         }
 
         &:disabled {

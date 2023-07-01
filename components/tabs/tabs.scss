@@ -14,7 +14,7 @@
 
     &__tab-item {
         border-bottom: 5px solid transparent;
-        color: var(--black);
+        color: var(--font-color);
         cursor: pointer;
         font-size: 16px;
         line-height: 24px;
@@ -23,7 +23,7 @@
     }
 
     &__content {
-        background: var(--grey-1);
+        background: var(--bg-grey);
         border: 1px var(--grey-2);
         border-style: solid none;
         display: none;
@@ -92,6 +92,7 @@
     &__trigger-simple:checked ~ &__scroller &__tab-item-simple,
     &__trigger-html:checked ~ &__scroller &__tab-item-html,
     &__trigger-css:checked ~ &__scroller &__tab-item-css {
-        border-color: var(--black);
+        border-color: var(--active-text-color);
+        color: var(--active-text-color);
     }
 }

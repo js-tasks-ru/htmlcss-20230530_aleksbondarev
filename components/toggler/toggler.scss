@@ -4,6 +4,13 @@
 
     &_theme-changer {
         display: block;
+        cursor: pointer;
+
+        @media (min-width: 768px) {
+            display: flex;
+            justify-content: space-between;
+            gap: 12px;
+        }
     }
 
     &_theme-changer &__state {
@@ -15,7 +22,7 @@
         position: absolute;
 
         &:checked {
-            & + .toggler__state .toggler__control {
+            & ~ .toggler__state .toggler__control {
                 background: var(--primary);
                 border-color: var(--primary);
 
@@ -27,17 +34,17 @@
         }
 
         &:focus {
-            & + .toggler__state .toggler__label {
+            & ~ .toggler__state .toggler__label {
                 text-decoration: underline;
             }
         }
 
         &:disabled {
-            & + .toggler__state {
+            & ~ .toggler__state {
                 cursor: default;
             }
 
-            & + .toggler__state .toggler__control {
+            & ~ .toggler__state .toggler__control {
                 background: var(--grey-2);
                 border-color: var(--grey-2);
 
@@ -46,7 +53,7 @@
                 }
             }
 
-            & + .toggler__state .toggler__label {
+            & ~ .toggler__state .toggler__label {
                 color: var(--grey-2);
             }
         }

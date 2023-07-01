@@ -156,7 +156,7 @@ pre .support {
 
 pre .tag,
 pre .tag-name {
-    color: navy;
+    color: #9292e3;
 }
 
 pre .keyword,
@@ -175,18 +175,18 @@ pre .css-property,
 pre .css-value,
 pre .vendor-fix,
 pre .support.namespace {
-    color: black;
+    color: var(--active-text-color);
 }
 
 pre .constant.numeric,
 pre .keyword.unit,
 pre .hex-color {
     font-weight: normal;
-    color: #099;
+    color: var(--font-color);
 }
 
 pre .entity.class {
-    color: #458;
+    color: #9292e3;
 }
 
 pre .entity.id,
