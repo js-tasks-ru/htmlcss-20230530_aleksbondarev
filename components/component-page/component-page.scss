@@ -10,7 +10,7 @@
 .component-page__content {
     background: var(--white);
     border-radius: 12px;
-    box-shadow: 0 2px 4px rgba(33, 36, 41, 0.05);
+    box-shadow: 0 2px 4px rgba(33, 36, 41, .05);
     grid-area: content;
 }
 
@@ -19,7 +19,7 @@
     .component-page {
         column-gap: 56px;
         display: grid;
-        grid-template: "sidebar content" auto / 229px 1fr;
+        grid-template: 'sidebar content' auto / 229px 1fr;
     }
 
     .component-page__sidebar {

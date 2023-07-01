@@ -1,10 +1,9 @@
 .root {
     display: grid;
-    grid-template:
-            "header" auto
-            "main" 1fr
-            "footer" auto
-            / 100%;
+    grid-template: 'header' auto
+        'main' 1fr
+        'footer' auto
+        / 100%;
     min-height: 100%;
 }
 
