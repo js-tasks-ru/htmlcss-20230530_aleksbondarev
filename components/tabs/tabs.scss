@@ -30,7 +30,7 @@
         flex-direction: column;
         padding: 22px 0 40px;
 
-        @media (min-width: 1280px) {
+        @mixin breakpoint medium {
             padding: 68px 0 92px;
         }
 
@@ -40,7 +40,7 @@
             border: none;
             padding: 0;
 
-            @media (min-width: 768px) {
+            @mixin breakpoint small {
                 margin-top: 24px;
             }
 

@@ -6,7 +6,7 @@
         margin-bottom: 32px;
         margin-top: 24px;
 
-        @media (min-width: 768px) {
+        @mixin breakpoint small {
             font-size: 5rem;
             font-weight: 500;
             line-height: 64px;
@@ -20,11 +20,11 @@
         grid-template-rows: repeat(auto-fill, minmax(210px, auto));
         gap: 16px;
 
-        @media (min-width: 768px) {
+        @mixin breakpoint small {
             grid-template-columns: repeat(2, 1fr);
         }
 
-        @media (min-width: 1280px) {
+        @mixin breakpoint medium {
             gap: 30px;
             grid-template-columns: repeat(3, minmax(350px, auto));
         }
@@ -35,7 +35,7 @@
         justify-content: center;
         margin-top: 24px;
 
-        @media (min-width: 1280px) {
+        @mixin breakpoint medium {
             margin-top: 64px;
         }
     }

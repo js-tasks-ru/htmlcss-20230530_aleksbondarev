@@ -6,7 +6,7 @@
         display: block;
         cursor: pointer;
 
-        @media (min-width: 768px) {
+        @mixin breakpoint small {
             display: flex;
             justify-content: space-between;
             gap: 12px;

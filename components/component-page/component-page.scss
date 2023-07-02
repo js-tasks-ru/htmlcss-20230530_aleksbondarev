@@ -1,7 +1,7 @@
 .component-page {
     margin-top: 36px;
 
-    @media (min-width: 1280px) {
+    @mixin breakpoint medium {
         column-gap: 56px;
         display: grid;
         grid-template: 'sidebar content' auto / 229px 1fr;
@@ -11,7 +11,7 @@
         display: none;
         grid-area: sidebar;
 
-        @media (min-width: 1280px) {
+        @mixin breakpoint medium {
             display: flex;
         }
     }
