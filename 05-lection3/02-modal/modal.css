@@ -29,13 +29,13 @@
 }
 
 .modal__close-icon {
-    color: var(--grey-4);
+    color: var(--icon-default-color);
     height: 1.6rem;
     width: 1.6rem;
 }
 
 .modal__title {
-    color: var(--grey-4);
+    color: var(--text-secondary);
     font-size: 20px;
     font-weight: 600;
     line-height: 24px;
@@ -43,7 +43,7 @@
 }
 
 .modal__text {
-    color: var(--grey-4);
+    color: var(--text-secondary);
     font-size: 16px;
     line-height: 24px;
 }

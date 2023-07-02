@@ -1,5 +1,5 @@
 .accordion__section {
-    border: 1px solid var(--grey-3);
+    border: 1px solid var(--border-default-color);
     border-radius: 8px;
     margin-bottom: 8px;
 }
@@ -23,7 +23,7 @@
 .accordion__trigger-icon {
     width: 1.6rem;
     height: .8rem;
-    color: var(--grey-4);
+    color: var(--icon-default-color);
 }
 
 .accordion__section[open] .accordion__trigger {
@@ -35,7 +35,7 @@
 }
 
 .accordion__content {
-    color: var(--grey-4);
+    color: var(--text-secondary);
     line-height: 24px;
     padding: 0 32px 24px;
 }

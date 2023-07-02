@@ -1,5 +1,5 @@
 .input__label {
-    color: var(--grey-3);
+    color: var(--input-text-color);
     display: inline-block;
     font-size: 12px;
     font-weight: 500;
@@ -20,7 +20,7 @@
     background-size: 24px 24px;
     border: 1px solid var(--grey-2);
     border-radius: 8px;
-    color: var(--grey-4);
+    color: var(--input-text-color);
     outline: none;
     padding: 17px 16px 13px;
     width: 100%;
@@ -49,6 +49,6 @@
 .input_disabled .input__control-text,
 .input__control-text:disabled {
     background: var(--grey-2);
-    color: var(--grey-3);
+    color: var(--text-muted);
     cursor: not-allowed;
 }

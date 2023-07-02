@@ -21,15 +21,23 @@
     --alternate-font-family: 'Source Sans 3', var(--default-font-family);
 
     --text-primary: var(--black);
+    --text-secondary: var(--grey-4);
+    --text-muted: var(--grey-3);
 
     --bg-main: var(--white);
     --bg-component-page: var(--grey-1);
     --bg-grey: var(--grey-1);
-    --bg-card: var(--white);
 
     --font-color: var(--text-primary);
-
     --active-text-color: var(--text-primary);
 
     --logo-color: var(--text-primary);
+    --input-text-color: var(--grey-4);
+    --border-default-color: var(--grey-3);
+    --icon-default-color: var(--grey-4);
+    --icon-muted-color: var(--grey-3);
+
+    --bg-card: var(--white);
+    --bg-header: var(--bg-grey);
+    --bg-tabs: var(--bg-grey);
 }

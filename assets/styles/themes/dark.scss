@@ -6,6 +6,10 @@ html[data-theme-dark] {
     --bg-card: var(--black);
     --active-text-color: var(--white);
     --bg-component-page: var(--bg-grey);
+    --icon-default-color: var(--grey-3);
+    --input-text-color: var(--white);
+    --text-primary: var(--white);
+    --text-secondary: var(--dark-3);
 
     img {
         filter: brightness(.8) contrast(1.2);

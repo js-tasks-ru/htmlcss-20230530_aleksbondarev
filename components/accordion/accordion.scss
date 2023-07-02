@@ -30,11 +30,11 @@
     &__trigger-icon {
         width: 1.6rem;
         height: .8rem;
-        color: var(--grey-4);
+        color: var(--icon-default-color);
     }
 
     &__content {
-        color: var(--grey-4);
+        color: var(--input-text-color);
         line-height: 24px;
         padding: 0 32px 24px;
     }

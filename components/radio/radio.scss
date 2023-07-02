@@ -48,7 +48,7 @@
 
     &__control {
         align-items: center;
-        background: var(--white);
+        background: transparent;
         border: 1px solid var(--grey-2);
         border-radius: 50%;
         display: flex;
@@ -67,7 +67,7 @@
     }
 
     &__label {
-        color: var(--grey-4);
+        color: var(--input-text-color);
         font-size: 1.6rem;
         line-height: 24px;
     }

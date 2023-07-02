@@ -52,13 +52,13 @@
     }
 
     &__close-icon {
-        color: var(--grey-4);
+        color: var(--icon-default-color);
         height: 1.6rem;
         width: 1.6rem;
     }
 
     &__title {
-        color: var(--grey-4);
+        color: var(--text-secondary);
         font-size: 2rem;
         line-height: 24px;
         margin-bottom: 14px;
@@ -71,7 +71,7 @@
     }
 
     &__text {
-        color: var(--grey-4);
+        color: var(--text-secondary);
         font-size: 1.6rem;
         line-height: 24px;
 
