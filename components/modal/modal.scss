@@ -1,0 +1,83 @@
+.modal {
+    background: rgba(196, 196, 196, .5);
+    bottom: 0;
+    display: none;
+    left: 0;
+    position: fixed;
+    right: 0;
+    top: 0;
+
+    &_window-preview {
+        border-radius: 4px;
+        display: block;
+        padding: 12px;
+        pointer-events: none;
+        position: static;
+
+        @mixin breakpoint small {
+            padding: 16px;
+        }
+    }
+
+    &_window-preview &__window {
+        left: initial;
+        padding: 12px;
+        position: relative;
+        top: initial;
+        transform: none;
+
+        @mixin breakpoint small {
+            padding: 24px;
+        }
+    }
+
+    &__window {
+        background: var(--bg-main);
+        border-radius: 8px;
+        left: 50%;
+        max-width: 428px;
+        padding: 30px 40px 33px;
+        position: absolute;
+        top: 50%;
+        transform: translate(-50%, -50%);
+    }
+
+    &__close {
+        cursor: pointer;
+        height: 16px;
+        position: absolute;
+        right: 15px;
+        top: 15px;
+        width: 16px;
+    }
+
+    &__close-icon {
+        color: var(--icon-default-color);
+        height: 1.6rem;
+        width: 1.6rem;
+    }
+
+    &__title {
+        color: var(--text-secondary);
+        font-size: 2rem;
+        line-height: 24px;
+        margin-bottom: 14px;
+        font-weight: 500;
+
+        @mixin breakpoint small {
+            font-size: 2rem;
+            font-weight: 600;
+        }
+    }
+
+    &__text {
+        color: var(--text-secondary);
+        font-size: 1.6rem;
+        line-height: 24px;
+
+        @mixin breakpoint small {
+            font-size: 1.6rem;
+            line-height: 24px;
+        }
+    }
+}

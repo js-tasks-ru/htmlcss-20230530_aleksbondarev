@@ -33,7 +33,7 @@
 }
 
 .toggler__input:disabled + .toggler__state .toggler__control:before {
-    background: var(--grey-3);
+    background: var(--text-muted);
 }
 
 .toggler__input:disabled + .toggler__state .toggler__label {
@@ -68,7 +68,7 @@
 }
 
 .toggler__label {
-    color: var(--grey-4);
+    color: var(--input-text-color);
     font-size: 1.6rem;
     line-height: 24px;
 }

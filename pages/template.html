@@ -1,92 +1,276 @@
 <!DOCTYPE html>
 <html lang="ru">
 <head>
-    <meta charset="UTF-8">
-    <meta name="viewport" content="width=device-width, initial-scale=1">
-    <title>Component template page</title>
-    <link rel="stylesheet" href="../assets/css/main.css">
-    <script src="../components/histogram/histogram.js"></script>
+  <meta charset="UTF-8">
+  <meta name="viewport" content="width=device-width, initial-scale=1">
+  <title>Component template page</title>
+  <link href="../dist/bundle.css" rel="stylesheet">
+  <script defer src="../components/mobile-menu/mobile-menu.js"></script>
+  <script defer src="../components/theme-changer/theme-changer.js"></script>
+  <script defer src="../assets/js/external/rainbow.js"></script>
+  <script src="../components/histogram/histogram.js"></script>
 </head>
 <body>
 <div class="root root_component-page">
-    <header class="header">
-        <div class="container">
-            <div class="header__inner">
-                <a class="header__logo" href="../index.html">
-                    <svg height="32" viewBox="0 0 110 32" width="110" xmlns="http://www.w3.org/2000/svg">
-                        <g>
-                            <rect fill="currentColor" height="30" width="30" y="1"/>
-                            <rect fill="currentColor" height="32" rx="16" width="32" x="38"/>
-                            <path d="M78 0L110 32H78V0Z" fill="currentColor"/>
-                        </g>
-                    </svg>
+  <header class="header">
+    <div class="container">
+      <div class="header__inner">
+        <a class="header__mobile-menu-trigger" id="mobile-menu-open">
+          <svg class="svg-icon header__mobile-menu-icon">
+            <use href="../../assets/images/icons.svg#mobile-menu-trigger"></use>
+          </svg>
+        </a>
+        <div class="mobile-menu" id="mobile-menu">
+          <div class="header">
+            <div class="container">
+              <div class="header__inner">
+                <a class="header__mobile-menu-trigger header__mobile-menu-trigger_close"
+                   id="mobile-menu-close">
+                  <svg class="svg-icon header__mobile-menu-icon">
+                    <use href="../../assets/images/icons.svg#mobile-menu-close"></use>
+                  </svg>
                 </a>
+                <div class="header__logo">
+                  <svg height="32" viewBox="0 0 110 32" width="110" xmlns="http://www.w3.org/2000/svg">
+                    <g>
+                      <rect fill="currentColor" height="30" width="30" y="1" />
+                      <rect fill="currentColor" height="32" rx="16" width="32" x="38" />
+                      <path d="M78 0L110 32H78V0Z" fill="currentColor" />
+                    </g>
+                  </svg>
+                </div>
+              </div>
             </div>
-        </div>
-    </header>
-    <main class="main">
-        <div class="container">
-            <div class="component-page">
-                <aside class="sidebar component-page__sidebar">
-                    <div class="sidebar__section">
-                        <h4 class="sidebar__section-title">Components</h4>
-                        <nav class="sidebar__section-links">
-                            <a href="#" class="sidebar__section-link">Avatar</a>
-                            <a href="#" class="sidebar__section-link">Custom form elements</a>
-                            <a href="#" class="sidebar__section-link sidebar__section-link_active">Histogram</a>
-                            <a href="#" class="sidebar__section-link">Custom form elements</a>
-                            <a href="#" class="sidebar__section-link">Button</a>
-                        </nav>
-                    </div>
-                    <div class="sidebar__section">
-                        <h4 class="sidebar__section-title">Containers</h4>
-                        <nav class="sidebar__section-links">
-                            <a href="#" class="sidebar__section-link">Avatar</a>
-                            <a href="#" class="sidebar__section-link">Custom form elements</a>
-                            <a href="#" class="sidebar__section-link">Histogram</a>
-                            <a href="#" class="sidebar__section-link">Custom form elements</a>
-                            <a href="#" class="sidebar__section-link">Button</a>
-                        </nav>
-                    </div>
-                    <div class="sidebar__section">
-                        <h4 class="sidebar__section-title">Templates</h4>
-                        <nav class="sidebar__section-links">
-                            <a href="#" class="sidebar__section-link">Avatar</a>
-                            <a href="#" class="sidebar__section-link">Custom form elements</a>
-                            <a href="#" class="sidebar__section-link">Histogram</a>
-                            <a href="#" class="sidebar__section-link">Custom form elements</a>
-                            <a href="#" class="sidebar__section-link">Button</a>
-                        </nav>
-                    </div>
-                </aside>
-                <section class="component-page__content">
-                    <div class="component">
-                        <div class="component__title">Histogram</div>
-                        <div class="component__content">
-                            <div class="histogram histogram_sm">
-                                <div class="histogram__header">
-                                    <div class="histogram__title">Total orders</div>
-                                    <a href="#" class="histogram__link">View all</a>
-                                </div>
-                                <div class="histogram__total">50254</div>
-                                <div class="histogram__bars"></div>
-                            </div>
-                        </div>
-                    </div>
-                </section>
+          </div>
+          <div class="mobile-menu__body container">
+            <div class="theme-changer">
+              <label class="toggler toggler_theme-changer">
+                <input type="checkbox" class="toggler__input">
+                <span class="toggler__state">
+                                <span class="toggler__label">Dark mode</span>
+                                <span class="toggler__control"></span>
+                            </span>
+              </label>
             </div>
-        </div>
-    </main>
-    <footer class="footer footer_sm">
-        <div class="container">
-            <div class="footer__inner">
-                <h6 class="footer__title">Reusable component library</h6>
+            <div class="mobile-menu__content">
+              <section class="mobile-menu__section">
+                <h4 class="mobile-menu__section-title">Elements</h4>
+                <nav class="mobile-menu__section-links">
+                  <a href="#" class="mobile-menu__section-link">Avatar</a>
+                  <a href="#" class="mobile-menu__section-link">Custom form elements</a>
+                  <a href="#" class="mobile-menu__section-link mobile-menu__section-link_active">Histogram</a>
+                  <a href="#" class="mobile-menu__section-link">Custom form elements</a>
+                  <a href="#" class="mobile-menu__section-link">Button</a>
+                </nav>
+              </section>
+              <section class="mobile-menu__section">
+                <h4 class="mobile-menu__section-title">Containers</h4>
+                <nav class="mobile-menu__section-links">
+                  <a href="#" class="mobile-menu__section-link">Avatar</a>
+                  <a href="#" class="mobile-menu__section-link">Custom form elements</a>
+                  <a href="#" class="mobile-menu__section-link">Histogram</a>
+                  <a href="#" class="mobile-menu__section-link">Custom form elements</a>
+                  <a href="#" class="mobile-menu__section-link">Button</a>
+                </nav>
+              </section>
             </div>
+          </div>
         </div>
-    </footer>
+        <a class="header__logo" href="../index.html">
+          <svg height="32" viewBox="0 0 110 32" width="110" xmlns="http://www.w3.org/2000/svg">
+            <g>
+              <rect fill="currentColor" height="30" width="30" y="1" />
+              <rect fill="currentColor" height="32" rx="16" width="32" x="38" />
+              <path d="M78 0L110 32H78V0Z" fill="currentColor" />
+            </g>
+          </svg>
+        </a>
+        <div class="header__content">
+          <nav class="header__content-menu">
+            <a href="#" class="header__content-menu-item header__content-menu-item_active">Components</a>
+            <a href="#" class="header__content-menu-item">About</a>
+            <a href="#" class="header__content-menu-item">Contact</a>
+          </nav>
+          <div class="header__content-theme-changer">
+            <div class="theme-changer">
+              <label class="toggler toggler_theme-changer">
+                <input type="checkbox" class="toggler__input">
+                <svg class="svg-icon theme-changer__icon">
+                  <use href="../../assets/images/icons.svg#sun"></use>
+                </svg>
+                <span class="toggler__state">
+                    <span class="toggler__control"></span>
+                </span>
+                <svg class="svg-icon theme-changer__icon">
+                  <use href="../../assets/images/icons.svg#moon"></use>
+                </svg>
+              </label>
+            </div>
+          </div>
+        </div>
+      </div>
+    </div>
+  </header>
+  <main class="main">
+    <div class="container">
+      <div class="component-page">
+        <aside class="sidebar component-page__sidebar">
+          <div class="sidebar__section">
+            <h4 class="sidebar__section-title">All Components</h4>
+            <nav class="sidebar__section-links">
+              <a href="#" class="sidebar__section-link">Accordion</a>
+              <a href="#" class="sidebar__section-link">Avatar</a>
+              <a href="#" class="sidebar__section-link">Button</a>
+              <a href="#" class="sidebar__section-link">Calendar</a>
+              <a href="#" class="sidebar__section-link">Custom form elements</a>
+              <a href="#" class="sidebar__section-link sidebar__section-link_active">Histogram</a>
+              <a href="#" class="sidebar__section-link">Modal</a>
+              <a href="#" class="sidebar__section-link">Skeleton</a>
+              <a href="#" class="sidebar__section-link">Tooltip</a>
+            </nav>
+          </div>
+          <div class="sidebar__section">
+            <h4 class="sidebar__section-title">Complex</h4>
+            <nav class="sidebar__section-links">
+              <a href="#" class="sidebar__section-link">Accordion</a>
+              <a href="#" class="sidebar__section-link">Calendar</a>
+              <a href="#" class="sidebar__section-link">Histogram</a>
+              <a href="#" class="sidebar__section-link">Modal</a>
+              <a href="#" class="sidebar__section-link">Skeleton</a>
+              <a href="#" class="sidebar__section-link">Tooltip</a>
+            </nav>
+          </div>
+          <div class="sidebar__section">
+            <h4 class="sidebar__section-title">Simple</h4>
+            <nav class="sidebar__section-links">
+              <a href="#" class="sidebar__section-link">Avatar</a>
+              <a href="#" class="sidebar__section-link">Custom form elements</a>
+              <a href="#" class="sidebar__section-link">Button</a>
+            </nav>
+          </div>
+        </aside>
+        <section class="component-page__content">
+          <div class="component">
+            <div class="component__title">Histogram</div>
+            <div class="component__content">
+              <div class="histogram histogram_sm">
+                <div class="histogram__header">
+                  <div class="histogram__title">Total orders</div>
+                  <a href="#" class="histogram__link">View all</a>
+                </div>
+                <div class="histogram__total">50 254</div>
+                <div class="histogram__bars"></div>
+              </div>
+            </div>
+            <div class="tabs component__tabs">
+              <input type="radio" id="#html-tab" name="code" value="html" class="tabs__trigger tabs__trigger-html"
+                     checked>
+              <input type="radio" id="#css-tab" name="code" value="css"
+                     class="tabs__trigger tabs__trigger-css">
+
+              <div class="tabs__scroller container">
+                <label for="#html-tab" class="tabs__tab-item tabs__tab-item-html">HTML</label>
+                <label for="#css-tab" class="tabs__tab-item tabs__tab-item-css">CSS</label>
+              </div>
+
+              <div class="tabs__divider"></div>
+
+              <div class="tabs__content tabs__content_html tabs__content_code">
+                <figure>
+                  <pre>
+                      <code data-language="html">
+&lt;div class=&quot;histogram histogram_sm&quot;&gt;
+    &lt;div class=&quot;histogram__header&quot;&gt;
+        &lt;div class=&quot;histogram__title&quot;&gt;Total orders&lt;/div&gt;
+        &lt;span class=&quot;histogram__link&quot;&gt;View all&lt;/span&gt;
+    &lt;/div&gt;
+    &lt;div class=&quot;histogram__total&quot;&gt;50 254&lt;/div&gt;
+    &lt;div class=&quot;histogram__bars&quot;&gt;
+        &lt;div class=&quot;histogram__bar&quot; style=&quot;height: 10%&quot;&gt;&lt;/div&gt;
+        &lt;div class=&quot;histogram__bar&quot; style=&quot;height: 20%&quot;&gt;&lt;/div&gt;
+        &lt;div class=&quot;histogram__bar&quot; style=&quot;height: 30%&quot;&gt;&lt;/div&gt;
+        &lt;div class=&quot;histogram__bar&quot; style=&quot;height: 40%&quot;&gt;&lt;/div&gt;
+        &lt;div class=&quot;histogram__bar&quot; style=&quot;height: 50%&quot;&gt;&lt;/div&gt;
+        &lt;div class=&quot;histogram__bar&quot; style=&quot;height: 60%&quot;&gt;&lt;/div&gt;
+        &lt;div class=&quot;histogram__bar&quot; style=&quot;height: 70%&quot;&gt;&lt;/div&gt;
+        &lt;div class=&quot;histogram__bar&quot; style=&quot;height: 80%&quot;&gt;&lt;/div&gt;
+        &lt;div class=&quot;histogram__bar&quot; style=&quot;height: 90%&quot;&gt;&lt;/div&gt;
+        &lt;div class=&quot;histogram__bar&quot; style=&quot;height: 100%&quot;&gt;&lt;/div&gt;
+    &lt;/div&gt;
+&lt;/div&gt;
+                      </code>
+                  </pre>
+                </figure>
+              </div>
+              <div class="tabs__content tabs__content_css tabs__content_code">
+                <figure>
+                  <pre>
+                      <code data-language="css">
+.histogram {
+    border: 1px solid var(--grey-3);
+    border-radius: 8px;
+    padding: 16px 24px 24px;
+}
+
+.histogram__header {
+    display: flex;
+    justify-content: space-between;
+    margin-bottom: 6px;
+}
+
+.histogram__title {
+    color: var(--black);
+    font-size: 16px;
+    line-height: 24px;
+    opacity: 0.8;
+}
+
+.histogram__link {
+    color: var(--blue);
+    font-size: 16px;
+    line-height: 24px;
+    padding-top: 3px;
+    text-decoration: none;
+}
+
+.histogram__total {
+    color: var(--black);
+    font-size: 20px;
+    line-height: 26px;
+    margin-bottom: 39px;
+}
+
+.histogram__bars {
+    align-items: flex-end;
+    display: flex;
+    gap: 1px;
+    height: 50px;
+}
+
+.histogram__bar {
+    background: var(--blue);
+    flex-grow: 1;
+}
+                      </code>
+                  </pre>
+                </figure>
+              </div>
+            </div>
+          </div>
+        </section>
+      </div>
+    </div>
+  </main>
+  <footer class="footer footer_sm">
+    <div class="container">
+      <div class="footer__inner">
+        <h6 class="footer__title">Reusable component library</h6>
+      </div>
+    </div>
+  </footer>
 </div>
 <script>
-    createHistogram(document.querySelector('.histogram__bars'));
+  createHistogram(document.querySelector(".histogram__bars"));
 </script>
 </body>
 </html>

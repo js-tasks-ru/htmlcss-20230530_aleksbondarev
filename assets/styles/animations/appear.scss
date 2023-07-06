@@ -1,0 +1,16 @@
+@keyframes appear {
+    0% {
+        transform: scaleY(0);
+        transform-origin: bottom center;
+    }
+
+    50% {
+        transform: scaleY(0);
+        transform-origin: bottom center;
+    }
+
+    100% {
+        transform: scaleY(1);
+        transform-origin: bottom center;
+    }
+}

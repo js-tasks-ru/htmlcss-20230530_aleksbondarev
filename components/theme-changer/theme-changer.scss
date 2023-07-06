@@ -1,0 +1,12 @@
+.theme-changer {
+    &_mobile {
+        border: 1px solid var(--grey-2);
+        border-left: none;
+        border-right: none;
+        padding: 24px 0;
+    }
+
+    &__icon {
+        color: var(--icon-muted-color);
+    }
+}

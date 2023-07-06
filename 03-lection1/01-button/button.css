@@ -26,9 +26,9 @@
 
 .button_primary:hover {
     /*
-    Объявляю цвет явно, так как не знаю, можно ли менять main.css
+    Объявляю цвет явно, так как не знаю, можно ли менять main.scss
     Предполагаю, что задачи и проект независимы друг от друга,
-    кроме уже заданных переменных, normalize.css и fonts.css
+    кроме уже заданных переменных, normalize.scss и fonts.scss
      */
     background: #2342C0;
 }
@@ -43,7 +43,7 @@
 }
 
 .button_alternate {
-    border: 1px solid var(--grey-3);
+    border: 1px solid var(--border-default-color);
 }
 
 .button_alternate:hover {

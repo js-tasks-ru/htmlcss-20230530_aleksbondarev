@@ -1,0 +1,26 @@
+.component-page {
+    margin-top: 36px;
+
+    @mixin breakpoint medium {
+        column-gap: 56px;
+        display: grid;
+        grid-template: 'sidebar content' auto / 229px 1fr;
+    }
+
+    &__sidebar {
+        display: none;
+        grid-area: sidebar;
+
+        @mixin breakpoint medium {
+            display: flex;
+        }
+    }
+
+    &__content {
+        background: var(--bg-main);
+        border-radius: 12px;
+        box-shadow: 0 2px 4px rgba(33, 36, 41, .05);
+        grid-area: content;
+        overflow: hidden;
+    }
+}

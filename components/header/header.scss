@@ -1,0 +1,69 @@
+.header {
+    background: var(--bg-main);
+    grid-area: header;
+    padding: 24px 0 24px 0;
+
+    &__inner {
+        display: flex;
+        justify-content: center;
+        position: relative;
+        align-items: center;
+
+        @mixin breakpoint small {
+            justify-content: space-between;
+        }
+    }
+
+    &__logo {
+        display: inline-flex;
+
+        svg {
+            color: var(--logo-color);
+        }
+    }
+
+    &__content {
+        display: none;
+        align-items: center;
+        gap: 56px;
+
+        @mixin breakpoint small {
+            display: flex;
+        }
+    }
+
+    &__content-menu {
+        display: flex;
+        gap: 24px;
+        color: var(--text-muted);
+    }
+
+    &__content-menu-item_active {
+        color: var(--active-text-color);
+    }
+
+    &__mobile-menu-trigger {
+        cursor: pointer;
+        display: inline-flex;
+        left: 0;
+        position: absolute;
+        top: 50%;
+        transform: translateY(-50%);
+
+        @mixin breakpoint small {
+            display: none;
+        }
+    }
+
+    &__mobile-menu-trigger_close {
+        background: var(--bg-grey);
+        border-radius: 50%;
+        padding: 4px;
+    }
+
+    &__mobile-menu-icon {
+        color: var(--font-color);
+        height: 24px;
+        width: 24px;
+    }
+}

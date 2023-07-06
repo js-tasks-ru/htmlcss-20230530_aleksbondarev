@@ -1,0 +1,98 @@
+.tabs {
+    position: relative;
+
+    &__scroller {
+        display: flex;
+        gap: 40px;
+        overflow-x: scroll;
+    }
+
+    &__trigger {
+        clip: rect(0, 0, 0, 0);
+        position: absolute;
+    }
+
+    &__tab-item {
+        border-bottom: 5px solid transparent;
+        color: var(--font-color);
+        cursor: pointer;
+        font-size: 16px;
+        line-height: 24px;
+        padding-bottom: 8px;
+        white-space: nowrap;
+    }
+
+    &__content {
+        background: var(--bg-tabs);
+        border: 1px var(--grey-2);
+        border-style: solid none;
+        display: none;
+        flex-direction: column;
+        padding: 22px 0 40px;
+
+        @mixin breakpoint medium {
+            padding: 68px 0 92px;
+        }
+
+        &_code {
+            margin-top: 16px;
+            background: transparent;
+            border: none;
+            padding: 0;
+
+            @mixin breakpoint small {
+                margin-top: 24px;
+            }
+
+            pre {
+                overflow-x: auto;
+            }
+        }
+    }
+
+    &__divider {
+        position: absolute;
+        width: 100vw;
+        height: 1px;
+        background: var(--grey-2);
+        transform: translate(-50%, 0);
+        left: 50%;
+    }
+
+    &__trigger-all:focus ~ &__scroller &__tab-item-all {
+        text-decoration: underline;
+    }
+
+    &__trigger-complex:focus ~ &__scroller &__tab-item-complex {
+        text-decoration: underline;
+    }
+
+    &__trigger-simple:focus ~ &__scroller &__tab-item-simple {
+        text-decoration: underline;
+    }
+
+    &__trigger-html:focus ~ &__scroller &__tab-item-html {
+        text-decoration: underline;
+    }
+
+    &__trigger-css:focus ~ &__scroller &__tab-item-css {
+        text-decoration: underline;
+    }
+
+    &__trigger-all:checked ~ &__content_all,
+    &__trigger-complex:checked ~ &__content_complex,
+    &__trigger-simple:checked ~ &__content_simple,
+    &__trigger-html:checked ~ &__content_html,
+    &__trigger-css:checked ~ &__content_css {
+        display: block;
+    }
+
+    &__trigger-all:checked ~ &__scroller &__tab-item-all,
+    &__trigger-complex:checked ~ &__scroller &__tab-item-complex,
+    &__trigger-simple:checked ~ &__scroller &__tab-item-simple,
+    &__trigger-html:checked ~ &__scroller &__tab-item-html,
+    &__trigger-css:checked ~ &__scroller &__tab-item-css {
+        border-color: var(--active-text-color);
+        color: var(--active-text-color);
+    }
+}

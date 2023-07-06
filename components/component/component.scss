@@ -1,0 +1,14 @@
+.component {
+    padding: 32px 48px;
+
+    &__title {
+        font-size: 2.8rem;
+        line-height: 38px;
+        color: var(--text-secondary);
+        margin-bottom: 24px;
+    }
+
+    &__tabs {
+        margin-top: 64px;
+    }
+}
